@@ -1,0 +1,110 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+/* toto je černá magie, na kterou nešahej! */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+BARVY
+czechitas                 #b92e81
+šedé pozadí stránky       #bdc3c7
+tmavé pozadí pod textem   #31363b
+dělítka mezi tlačítky     #3f464d
+tlačítko portfolio        #e74c3c
+tlačítko facebook         #3b5998
+tlačítko twitter          #1da1f2
+*/
+
+
+body {
+  background-color: #bdc3c7;
+  width: 20%;
+  margin: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.hlavicka {
+  margin: 0;
+  position: relative; /* rodič */
+  background-color: #31363b;
+}
+
+.foto {
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  border-radius: 50%;
+  background-color: rgb(234, 99, 175);
+  position: absolute; /* dítě */
+  left: 70%;
+  bottom: -20px;
+  box-shadow: 5px 10px 8px #2b2a2a;
+}
+
+.obsah {
+  background-color: #31363b;
+  color: white;
+  padding: 15px;
+  margin: 0;
+}
+
+.obsah p {
+  color: rgb(174, 174, 174);
+}
+
+.odkazy {
+  display: flex;
+  flex-wrap: wrap; 
+  list-style-type: none;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.odkazy li {
+  width: 100%;
+  border: 1px solid #3f464d;
+  color: rgb(174, 174, 174); 
+}
+
+.odkazy a {
+  color: rgb(174, 174, 174);
+  text-decoration: none;
+}
+
+.odkazy a:hover {
+  color: white;
+}
+
+.btn {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #31363b;
+  flex-grow: 1;
+  width: auto;
+}
+
+.facebook, .twitter {
+  flex-basis: 50%;
+}
+
+.portfolio {
+  flex-basis: 100%;
+}
+
+.portfolio:hover {
+  background-color: #e74c3c;
+}
+
+.facebook:hover  {
+  background-color: #3b5998;
+}
+
+.twitter:hover  {
+  background-color: #1da1f2;
+}
