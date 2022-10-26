@@ -26,12 +26,12 @@ body {
 .hlavicka {
   margin: 0;
   position: relative; /* rodič */
-  background-color: #31363b;
 }
 
 .foto {
   width: 100%;
   margin: 0;
+  display: block;
 }
 
 .logo {
